@@ -3,104 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Theropod Archive - Explore Prehistoric Theropods</title>
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <!-- Header / site branding -->
+    <!-- Header / Navigation -->
     <header id="site-header">
-        <div class="wrap">
-            <div id="logo">Theropod Archive</div>
-            <nav id="main-nav" aria-label="Main Navigation">
-                <ul>
-                    <li><a href="#site-plan">Site Plan</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#signup">Sign Up</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="header-content">
+                <div id="logo" class="logo">
+                    <h1>Theropod Archive</h1>
+                </div>
+                <nav id="main-nav" aria-label="Main Navigation">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#species">Species</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <main id="main" tabindex="-1">
-        <!-- Section: site plan reference image (used to build the page) -->
-        <section id="site-plan" aria-labelledby="site-plan-title">
-            <h2 id="site-plan-title">Page 1 — Site Plan (reference)</h2>
-            <p>This image is the reference site plan. Use it to guide layout and element placement.</p>
-            <figure>
-                <img src="images/Page 1 Site plan copy.png" alt="Site plan drawing showing page regions" />
-                <figcaption>Reference: Page 1 Site plan copy.png</figcaption>
-            </figure>
-        </section>
-
-        <!-- Intro / hero area (placeholder) -->
-        <section id="hero" aria-labelledby="hero-title">
-            <h1 id="hero-title">Welcome to the Theropod Archive</h1>
-            <p class="lead">A small header/hero area that will be styled to match the site plan.</p>
-        </section>
-
-        <!-- About / content blocks -->
-        <section id="about" aria-labelledby="about-title">
-            <h2 id="about-title">About This Project</h2>
-            <p>Brief intro text describing the purpose of the archive and the site's structure.</p>
-        </section>
-
-        <!-- Features / cards area as shown on the plan -->
-        <section id="features" aria-labelledby="features-title">
-            <h2 id="features-title">Highlights</h2>
-            <div class="cards">
-                <article class="card" id="card-1">
-                    <h3>Feature One</h3>
-                    <p>Short description for feature one.</p>
-                </article>
-                <article class="card" id="card-2">
-                    <h3>Feature Two</h3>
-                    <p>Short description for feature two.</p>
-                </article>
-                <article class="card" id="card-3">
-                    <h3>Feature Three</h3>
-                    <p>Short description for feature three.</p>
-                </article>
+    <main id="main">
+        <!-- Hero Section - "What is a Theropod?" -->
+        <section id="home" class="hero-intro" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-intro-content">
+                    <div class="hero-intro-image">
+                        <img src="images/herrerasaurus.png" alt="Theropod dinosaur example">
+                    </div>
+                    <div class="hero-intro-text">
+                        <h2 id="hero-title">What is a Theropod?</h2>
+                        <p>Theropods were bipedal carnivorous dinosaurs that dominated terrestrial ecosystems throughout the Mesozoic Era. From the small Compsognathus to the mighty Tyrannosaurus rex, theropods evolved into increasingly sophisticated hunters with advanced features like feathers, social behavior, and specialized hunting strategies.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Gallery placeholder -->
-        <section id="gallery" aria-labelledby="gallery-title">
-            <h2 id="gallery-title">Gallery</h2>
-            <div class="thumbnails">
-                <figure><img src="images/placeholder.png" alt="Placeholder 1"><figcaption>Item 1</figcaption></figure>
-                <figure><img src="images/placeholder.png" alt="Placeholder 2"><figcaption>Item 2</figcaption></figure>
-                <figure><img src="images/placeholder.png" alt="Placeholder 3"><figcaption>Item 3</figcaption></figure>
+        <!-- Theropod Groups Section -->
+        <section id="groups" class="theropod-groups" aria-labelledby="groups-title">
+            <div class="container">
+                <h2 id="groups-title">Theropod Groups</h2>
+
+                <!-- Group 1: Left Image -->
+                <div class="group-row group-row-left">
+                    <div class="group-image">
+                        <img src="images/tyrannosaurus_big.webp" alt="Tyrannosaurus rex">
+                    </div>
+                    <div class="group-info">
+                        <h3>Tyrannosauridae</h3>
+                        <p>The largest terrestrial carnivores, characterized by massive jaws, powerful hind legs, and reduced forelimbs. Includes the iconic Tyrannosaurus rex.</p>
+                    </div>
+                </div>
+
+                <!-- Group 2: Right Image -->
+                <div class="group-row group-row-right">
+                    <div class="group-info">
+                        <h3>Dromaeosaurs</h3>
+                        <p>Intelligent pack hunters with distinctive curved claws on their feet. Known for remarkable agility and sophisticated hunting strategies. Includes Velociraptor and Deinonychus.</p>
+                    </div>
+                    <div class="group-image">
+                        <img src="images/deinonychus_fly.jpg" alt="Deinonychus">
+                    </div>
+                </div>
+
+                <!-- Group 3: Left Image -->
+                <div class="group-row group-row-left">
+                    <div class="group-image">
+                        <img src="images/spinosaurus_big.jpg" alt="Spinosaurus">
+                    </div>
+                    <div class="group-info">
+                        <h3>Spinosaurids</h3>
+                        <p>Semi-aquatic theropods with distinctive sails on their backs. The largest carnivorous dinosaurs ever. Possible fish eaters with crocodile-like snouts.</p>
+                    </div>
+                </div>
+
+                <!-- Group 4: Right Image -->
+                <div class="group-row group-row-right">
+                    <div class="group-info">
+                        <h3>Ceratosaurs</h3>
+                        <p>Early large theropods with horns and crests on their heads. Dominated ecosystems before the rise of tyrannosaurs. Includes Carnotaurus and Acrocanthosaurus.</p>
+                    </div>
+                    <div class="group-image">
+                        <img src="images/carnotaurus.jpg" alt="Carnotaurus">
+                    </div>
+                </div>
+
+                <!-- Group 5: Left Image -->
+                <div class="group-row group-row-left">
+                    <div class="group-image">
+                        <img src="images/giganotosaurus_big.jpg" alt="Giganotosaurus">
+                    </div>
+                    <div class="group-info">
+                        <h3>Allosaurids</h3>
+                        <p>Large active predators with three-fingered hands and powerful tails. Hunted cooperatively in groups. Includes Allosaurus and Giganotosaurus.</p>
+                    </div>
+                </div>
+
+                <!-- Group 6: Right Image -->
+                <div class="group-row group-row-right">
+                    <div class="group-info">
+                        <h3>Oviraptorosaurs</h3>
+                        <p>Small to medium-sized theropods with distinctive crested skulls. Many possessed feathers and likely were omnivorous or specialized feeders.</p>
+                    </div>
+                    <div class="group-image">
+                        <img src="images/citipati.jpg" alt="Oviraptorosaur">
+                    </div>
+                </div>
+
+                <!-- Group 7: Left Image -->
+                <div class="group-row group-row-left">
+                    <div class="group-image">
+                        <img src="images/microraptor_fly.jpg" alt="Microraptor">
+                    </div>
+                    <div class="group-info">
+                        <h3>Troodontids</h3>
+                        <p>Small, highly intelligent theropods with enlarged brains. Often feathered and capable of rapid movement. Direct ancestors to modern birds.</p>
+                    </div>
+                </div>
+
+                <!-- Group 8: Right Image -->
+                <div class="group-row group-row-right">
+                    <div class="group-info">
+                        <h3>Therizinosaurus</h3>
+                        <p>Unusual theropods with massive curved claws and pot-bellied bodies. Possibly herbivorous despite their theropod ancestry. Mysterious and specialized hunters or foragers.</p>
+                    </div>
+                    <div class="group-image">
+                        <img src="images/therizinosaurus.jpg" alt="Therizinosaurus">
+                    </div>
+                </div>
             </div>
-        </section>
-
-        <!-- Signup / contact form -->
-        <section id="signup" aria-labelledby="signup-title">
-            <h2 id="signup-title">Sign Up</h2>
-            <form id="signup-form" action="#" method="post">
-                <label for="name">Name</label>
-                <input id="name" name="name" type="text" />
-
-                <label for="email">Email</label>
-                <input id="email" name="email" type="email" />
-
-                <button type="submit">Join</button>
-            </form>
         </section>
     </main>
 
-    <!-- Sidebar / additional links -->
-    <aside id="sidebar" aria-labelledby="sidebar-title">
-        <h3 id="sidebar-title">Quick Links</h3>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#features">Highlights</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-        </ul>
-    </aside>
-
+    <!-- Footer -->
     <footer id="site-footer">
-        <small>&copy; 2025 Theropod Archive</small>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Theropod Archive. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#species">Species</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
